@@ -3,7 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sign-in</title>
+    <link rel="stylesheet" href="sign_in.css" />
+    <link rel="stylesheet" href="Landing_page.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="navbar-container">
+      <img src="Aritzia_Logo.svg" id="Aritzia_Logo" />
+      <a class="home" href="index.html">Home</a>
+      <a class="services" href="#services">Services</a>
+      <a class="admin" href="#">Administration</a>
+      <a class="sign-in" href="signin.html">Sign in</a>
+    </div>
+    <div class="login-container">
+      <form method="post" class="login-form">
+        <h1 class="sign-in-heading">Sign in</h1>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            placeholder="Enter your username"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Enter your password"
+          />
+        </div>
+        <button type="submit" value="submit">Sign in</button>
+      </form>
+    </div>
+  </body>
 </html>
