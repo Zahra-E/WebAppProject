@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="admin-panel.css">
+</head>
+<body>
+
+  <h1>Admin Dashboard</h1>
+  <nav>
+    <a href="#admins">Manage Admins</a>
+    <a href="#content">Manage Content</a>
+  </nav>
+
+  <section id="admins">
+    <h2>Manage Admins</h2>
+    <form id="adminForm">
+      <input type="text" id="adminName" placeholder="Admin Name" required>
+      <input type="email" id="adminEmail" placeholder="Email" required>
+      <select id="adminRole">
+        <option>Super Admin</option>
+        <option>Editor</option>
+      </select>
+      <button type="submit">Add Admin</button>
+    </form>
+
+    <table id="adminTable">
+      <tr>
+        <th>Name</th><th>Email</th><th>Role</th><th>Action</th>
+      </tr>
+    </table>
+  </section>
+
+  <section id="content">
+    <h2>Manage Content</h2>
+    <form id="contentForm">
+      <input type="text" id="contentTitle" placeholder="Content Title" required>
+      <textarea id="contentDesc" placeholder="Description" required></textarea>
+      <button type="submit">Add Content</button>
+    </form>
+
+    <div id="contentList"></div>
+  </section>
+
+  <script src="admin-panel.js"></script>
+</body>
+</html>
