@@ -92,8 +92,8 @@ textarea::placeholder {
 }
 
 button {
-  width: 30%;
-  padding: 12px;
+  width: 7em;
+  padding: 15px;
   border-radius: 10px;
   background: #19232d;
   color: white;
