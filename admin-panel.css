@@ -1,5 +1,5 @@
 body {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -28,8 +28,9 @@ body::before {
   z-index: -1;
 }
 
-h1, h2 {
-  font-family: 'Libertinus Mono', monospace;
+h1,
+h2 {
+  font-family: "Libertinus Mono", monospace;
   text-align: center;
   color: #19232d;
 }
@@ -101,6 +102,12 @@ form select {
   background-color: #647586;
   color: whitesmoke;
 }
+form input::placeholder {
+  color: aliceblue;
+}
+textarea::placeholder {
+  color: aliceblue;
+}
 
 form button {
   background-color: #384152;
@@ -130,7 +137,8 @@ table {
   color: whitesmoke;
 }
 
-th, td {
+th,
+td {
   padding: 12px 15px;
   border-bottom: 1px solid #95a7b8;
   text-align: left;
@@ -139,7 +147,7 @@ th, td {
 th {
   background-color: #384152;
   color: whitesmoke;
-  font-family: 'Libertinus Mono', monospace;
+  font-family: "Libertinus Mono", monospace;
 }
 
 td button {
@@ -155,7 +163,6 @@ td button {
 td button:hover {
   background-color: #c0392b;
 }
-
 
 #contentList {
   display: flex;
@@ -177,7 +184,7 @@ td button:hover {
 .content-card h3 {
   margin-top: 0;
   color: whitesmoke;
-  font-family: 'Libertinus Mono', monospace;
+  font-family: "Libertinus Mono", monospace;
 }
 
 .content-card p {
@@ -197,5 +204,3 @@ td button:hover {
 .content-card button:hover {
   background-color: #c0392b;
 }
-
-

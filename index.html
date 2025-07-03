@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="Landing_page.css" />
+    <link rel="stylesheet" href="sign_in.css" />
+    <link rel="stylesheet" href="about_slideshow.css" />
+    <script src="about_slidshow.js"></script>
   </head>
   <body id="home">
     <div class="navbar-container">
@@ -44,8 +47,93 @@
         </p>
       </div>
     </div>
+    <section class="about-section">
+      <h2>About Us</h2>
+      <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <div class="mySlides fade">
+          <div class="slide-content">
+            <div class="text-section">
+              <h3>Our Story</h3>
+              <p>
+                Founded in 2010, we started as a small team with big dreams...
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="mySlides fade">
+          <div class="slide-content">
+            <div class="text-section">
+              <h3>Our Mission</h3>
+              <p>
+                To deliver exceptional quality and service to all our
+                customers...
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="mySlides fade">
+          <div class="slide-content">
+            <div class="text-section">
+              <h3>Our Team</h3>
+              <p>
+                Meet the talented individuals who make everything possible...
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation arrows -->
+        <div class="arrows">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+
+      <!-- Dots/bullets/indicators -->
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
     <footer>
-      <h3>Contact us</h3>
+      <div class="footer-container">
+        <div class="flex-footer">
+          <form method="get" id="contact-form">
+            <h1>Contact us</h1>
+            <div class="form-group">
+              <label for="Email">Email</label>
+              <input placeholder="Enter your Email" type="email" id="Email" />
+            </div>
+            <div class="form-group">
+              <label for="Message">Message</label>
+              <textarea
+                placeholder="Your Message....."
+                type="text"
+                id="Message"
+              ></textarea>
+              <button type="submit">Send</button>
+            </div>
+          </form>
+          <div class="map">
+            <h1>Our Location</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.41941548468132!3d37.7749297797596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f5f5f5f5%3A0x5f5f5f5f5f5f5f5f!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1697040000000!5m2!1sen!2sus"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

@@ -44,7 +44,7 @@ body::before {
   color: #19232d;
 }
 
-form {
+.login-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,7 +64,8 @@ form {
   width: 80%;
 }
 
-input {
+input,
+textarea {
   border-radius: 10px;
   background: rgb(117 124 131 / 29%);
   box-shadow: -2px 0px 29px 0 rgb(59 61 67);
@@ -75,14 +76,17 @@ input {
   font-size: 16px;
   outline: none;
   transition: all 0.3s ease;
+  font-family: "Libertinus Mono", "monospace";
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   border-color: rgba(0, 0, 0, 0.2);
   background: rgb(117 124 131 / 70%);
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #1b232bc1;
   font-family: "Times New Roman", Times, serif;
 }

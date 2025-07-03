@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+.about-section {
+  padding: 60px 0;
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Libre Baskerville", serif;
+}
+
+.slideshow-container {
+  max-width: 80%;
+  height: 75%;
+  position: relative;
+  margin: 30px auto;
+}
+
+.mySlides {
+  display: none;
+  padding: 20px;
+  background-image: radial-gradient(#53616e 4%, rgba(0, 0, 0, 0) 93%);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.mySlides:nth-child(1) {
+  background-image: radial-gradient(rgba(0, 0, 0, 0) 50%, #53616e 100%),
+    url(https://tse1.mm.bing.net/th/id/OIP.ph2XSEbBtadXXEzdPyHEZgHaE7?rs=1&pid=ImgDetMain&o=7&rm=3);
+  background-size: cover;
+}
+.mySlides:nth-child(2) {
+  background-image: radial-gradient(rgba(0, 0, 0, 0) 50%, #53616e 100%),
+    url(https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?cs=srgb&dl=pexels-konstantinos-eleftheriadis-2034335.jpg&fm=jpg);
+  background-size: cover;
+}
+.mySlides:nth-child(3) {
+  background-image: radial-gradient(rgba(0, 0, 0, 0) 50%, #53616e 100%),
+    url(Hotel1.jpg);
+  background-size: cover;
+}
+
+.slide-content {
+  padding: 40px;
+  height: 30vh;
+}
+.arrows {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+.next {
+  margin-left: 94%;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -40px;
+  padding: 16px;
+  color: #33333393;
+  font-weight: bold;
+  font-size: 4em;
+  transition: 0.3s;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dots/bullets/indicators */
+.dots-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    padding: 20px;
+  }
+
+  .prev,
+  .next {
+    padding: 10px;
+  }
+}
