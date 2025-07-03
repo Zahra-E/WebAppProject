@@ -1,4 +1,9 @@
-let slideIndex = 0;
+document.addEventListener("DOMContentLoaded", function () {
+  let slideIndex = 1;
+  showSlides(slideIndex);
+});
+
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
